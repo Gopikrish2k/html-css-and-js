@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #0062cc;
+  --background-color: #7bccf1;
+  --white: #ffffff;
+  --font-family: 'Montserrat', sans-serif;
+  --text-color: #333;
+  --secondary-text: #555;
+  --border-color: #ddd;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+.container {
+  background-color: var(--white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--text-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary-text);
+  text-align: center;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+}
