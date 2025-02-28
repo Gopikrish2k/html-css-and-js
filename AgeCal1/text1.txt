@@ -1,0 +1,26 @@
+what is gir and github?
+    git is open source version control tool.
+    github is a website that host the git repositories.
+
+how to clone a git repositories to a local devices?
+    git clone https://github.com/Gopikrish2k/html-css-and-js
+
+    note: this link is for git repositories that you want to clone.
+          you can find this link in github repositorie you create
+
+check status?
+git status
+
+after cloning the repo to local machine and you create file in local machine you 
+need to add it to the github repo using
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        AgeCal1/text1.txt
+
+to add 
+1. git add file_name
+2. git commit -m "text1.txt file added"
+3. git push origin main 
+
+insert -> add -> commit -> push
